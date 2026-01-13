@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Righteous&display=swap');
+
+html{
+	overflow-x: hidden;
+}
+
+nav
+{
+	background-color:black;
+	height:6rem;
+	width:100%;
+
+	left:0;
+	z-index:2;
+}
+
+h1, h2, h3, h4{
+	font-family: 'Righteous', serif;
+}
+
+h2{
+	border-bottom: 0.5rem solid orangered;
+	width:50vw;
+	margin-top:4rem;
+	font-size:3rem;
+	margin-bottom:0rem;
+}
+
+h3{
+	font-size:1.5rem;
+	margin-top:3rem;
+}
+
+p{
+	
+	width:50vw;
+	font-size:1.5rem;
+}
+
+nav ul
+{
+	display:flex;
+	justify-content:space-around;
+	list-style-type:none;
+	padding:0;
+	margin:0 auto;
+	align-items:center;
+	height:6rem;
+	width:60%;
+}
+
+nav ul li
+{
+	padding:3rem;
+	font-family: 'Righteous', serif;
+	font-size:100%;
+	margin:0;
+	text-align:center;
+}
+
+a
+{
+	color:orangered;
+}
+
+body{
+	padding:0;
+	margin:0;
+}
+
+h1{
+	font-size:clamp(3rem, 6vw, 40rem);
+	margin:0;
+	padding:1rem 0;
+	padding-bottom:2rem;
+	padding-left:1rem;
+	text-align:left;
+}
+
+header{
+	background-color:orangered;
+	padding:0;
+	margin:0;
+}
+
+main{
+	background-color:white;
+	min-height:100vh;
+	z-index:1;
+	position:relative;
+	padding:1rem;
+	margin-left:2rem;
+}
+
+img{
+	width:30vw;
+}
+
+.sideHolder	{
+	display:flex;
+	
+}
+
+.sideHolder .Sideimage{
+	margin-right:5vw;
+	border:0.3rem solid black;
+	width:auto;
+	height:20vw;
+}
+
+
+
+.cardContainer{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	padding: 10px;
+}
+
+.projectCard{
+	width:30vw;
+	background-color:orangered;
+	border:0.3rem solid black;
+	margin-bottom:3rem;
+}
+
+.projectCard img{
+	width:100%;
+}
+
+.projectCard p{
+	font-family: 'Righteous', serif;
+	color:black;
+	width:100%;
+	text-align:center;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+	img{
+		display:none;
+		right: 10000vw;
+	}
+	
+	h2, p{
+	width:75vw;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	h2, p{
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+	}
+	h3{
+	margin-left:2rem;	
+	}
+	main{
+	margin-left:auto;
+	margin-right:auto;
+	}
+	li{
+	margin-bottom:2rem;
+	}
+	ul{
+	list-style:none;
+	padding-left:0;
+	margin-left:0;
+	}
+	nav ul li
+	{
+	padding:5vw;
+	}
+}

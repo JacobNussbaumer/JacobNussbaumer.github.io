@@ -1,0 +1,67 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale-1">
+		<meta name="description" content="Jacob Nussbaumer">
+		<meta name="author" content="Jacob Nussbaumer">
+		<title>Jacob Nussbaumer</title>
+		<link rel="stylesheet" href="display.css" type="text/css">
+	</head>
+	<body>
+		<header>
+		<h1>Jacob Nussbaumer</h1>
+		
+			<nav>
+				<ul>
+					<li><a href="index.html">About</a></li>
+					<li><a href="projects.html">Portfolio</a></li>
+				</ul>
+			</nav>		
+		</header>
+		
+		<main>
+		<h2>Sun Tracking Solar Panel</h2>
+		
+		
+
+		<h3>Introduction</h3>
+		<p>This project was the my final project in EL 150, DC/AC Circuits and Analysis. We had free range to choose the project. I worked with a fellow student on the project, we opted to create a sun tracking solar panel mount.</p>
+		<p>The mount consists of the mechanical design and the circuit. The circuit design was my own. The circuit can drive one motor to follow the sun, so two are needed, one for each axis of the devices.</p>
+		
+		<div class="sideHolder">
+		<img src = "resources/solarPanelCircuit.PNG" class = "sideImage">
+
+		</div>
+		
+		</div>
+		<h3>Development</h3>
+		<p>Going into the project, we new we wanted to make the circuit work without a microcontroller. While it would be easier with one, we decided it would defeat the purpose of the class to not make a custom circuit to do the control.</p>
+		<p>I worked on the circuit design with help from my teammate while he tackled the mechanical design. I had known that op-amps could be used as voltage comparators, so my plan was to create one voltage divider with two LDRs which would give a higher voltage if one side was brighter and a lower voltage for the other side. Then we could compare this to a high and low trigger and use that to control the h bridge and thus the motor.</p>
+		<p>While designing the circuit, my teammate finished a rough draft of the CAD model and basic mechanical design and sent to it me to polish as I had more CAD experience. The image below is the final CAD model of the mount.</p>
+		
+		<div class="sideHolder">
+		<img src = "resources/solarPanelThumbnail.PNG" class = "sideImage">
+		<video controls class = "sideImage">
+			<source src = "resources/solarPanelVideo.mp4" type = "video/mp4">
+		</video>
+		</div>
+		
+		<h3>Outcomes</h3>
+		<p>We were both very happy with the outcome of the project. The mount was able to track the sun very well. We did a lot of testing with flashlights to ensure good response and then set it outside and watched it stay pointing at the sun. We both received an A on the project.</p>
+		<p>The mount was powered by a battery pack as opposed to the solar panel itself. Unfortunately we did not have enough time to power it with the panel. If I were to revisit this project I would make the solar panel the power source of the mount and connect a usb port for phone or device charging. I also believe the project would benefit from limit switches or some other switch to detect and stop the mount from turning too far and damaging itself</p>
+		
+	
+	
+		</main>
+		
+		
+		
+		<footer>				
+		</footer>
+		
+		
+		
+		
+			
+	</body>
+</html>
